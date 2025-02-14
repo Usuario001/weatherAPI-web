@@ -3,10 +3,75 @@
     <head>
         <title>Wheater web APP</title>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="WeatherAPI" />
+        <link rel="manifest" href="/images/favicon/site.webmanifest" />
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        
-        <script src="./index.js"></script>
+        <div class="main-container">
+            <div class="head">
+                <h1>APP DE CLIMA</h1>
+            </div>
+
+            <div class="content">
+                <form class="form-container" id="form-container">
+                    <fieldset> 
+                        <div class="control">
+                            <div>
+                                <label for="city">City</label>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="city" value="" id="city" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="actions">
+                        <div class="primary">
+                            <div class="btn">
+                                <button class="form-button">
+                                    Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <section class="response">
+                    <div>
+                        <p>Min Temperature: <span class="temp min-temp">0</span></p>
+                        <p>Temperature: <span class="temp current-temp">0</span></p>
+                        <p>Max Temperature: <span class="temp max-temp">0</span></p>
+                    </div>
+                    <div>
+                        <p>Humidity:<span class="temp humydity">0</spanx</p>
+                        <p>Pressure:<span class="temp pressure">0</span></p>
+                    </div>
+                    <div class="cloudAndWind">
+                        <p>clouds:
+                            <br> 
+                            <span class="temp clouds">0</span>
+                            <br>
+                            <span class="cloudsEmoji"></span>
+                        </p>
+                        <p>wind: <span class="temp current-templ">0</span></p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="title">
+                    JP follow me: 
+                    <span>
+                        github: <a href="https://github.com/Usuario001">https://github.com/Usuario001</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="./index.js"></script>
     </body>
 </html>
