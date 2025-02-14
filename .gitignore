@@ -1,0 +1,26 @@
+#No necesario pero por si acaso
+node_modules/
+dist/
+build/
+
+.env
+
+.dockerignore
+Dockerfile
+docker-compose.override.yml
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.vscode/
+*.swp
+*.swo
+
+*.log
+#por si test
+coverage/

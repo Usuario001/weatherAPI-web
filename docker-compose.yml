@@ -1,0 +1,11 @@
+services:
+  weatherweb-dev:
+    image: usuario001/docker-base-react:latest
+    container_name: weatherweb
+    working_dir: /home/jp/app
+    volumes:
+      - .:/home/jp/app
+    ports:
+      - "80:80"
+    stdin_open: true
+    tty: true
